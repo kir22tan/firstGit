@@ -1,7 +1,3 @@
 hii mai hu ek random eg
-<<<<<<< HEAD
-huihuiii.
-csssssss
-=======
 dsdsa
->>>>>>> 155da6ab589ca3e3cc4626c62315da05e758f111
+
