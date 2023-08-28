@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive website</title>
+    <style>
+      *{
+          box-sizing: border-box;
+          margin: 0px;
+          padding: 0px;
+
+      }
+
+      @keyframes anime{
+        0%{
+          border-radius: 0%;
+          transform: scale(1);
+          
+        }
+        
+        100%{
+          border-radius: 50%;
+          transform: scale(1.2);
+
+
+        }
+
+      }
+
+      .headin{
+          position: relative;
+          top:0;
+          z-index: 2;
+          height:80px;
+          width:100%;
+          /* background-color: rgb(181, 231, 253); */
+          /* position: fixed; */
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-flow: row wrap;
+          /* gap:25px; */
+          box-shadow: 0px 0px 10px rgb(103, 102, 102);
+          /* opacity:10%; */
+          background:url(https://source.unsplash.com/random);
+        }
+
+      .items:hover{
+          /* border-bottom-left-radius: 60%;
+          border-top-right-radius: 60%; */
+          border-radius: 50%;
+          cursor: pointer;
+          transform: scale(1.2);
+          color:white;
+          background-color: rgb(0, 0, 0);
+          background-image: none;
+        }
+        
+        /* #item1{
+          animation: anime 1s ease-out 3s infinite;
+              }
+        #item2{
+          animation: anime 1s ease 3s infinite;
+              }
+        #item3{
+          animation: anime 1s ease-in 3s infinite;
+              } */
+
+        .items{
+
+          background:url(https://source.unsplash.com/random);
+          border:2px dashed rgb(135, 85, 85);
+          transition: all .3s ease-in;
+          /* background-color: black; */
+          opacity: 1;
+          margin-right: 18px;
+          /* border-bottom-right-radius: 50%; */
+          /* border-top-right-radius: 0%; */
+          /* border-top-left-radius: 60%; */
+          padding: 15px;
+          border: 1.5px solid black ;
+          /* box-shadow: 2px whitesmoke; */
+          color: rgb(0, 0, 0);
+          font-size: 25px;
+          font-weight: bolder;
+      }
+
+      .floate:hover{
+          /* background-color: rgba(129, 242, 235, 0.5); */
+          /* margin: 120px; */
+          /* transform: translateX(-400px); */
+          /* margin: 50px; */
+          color: black;
+          font-weight: 900;
+          transform: scale(1.2);
+          background-color: white;
+          
+      }
+      .bod{
+          /* display: block; */
+
+          background:url(https://source.unsplash.com/random);
+          opacity:60%;
+          overflow: hidden;
+          position: absolute;
+          /* height: 100px; */
+          height: 600px;
+          /* margin-top: 200px; */
+          top: 80px;
+          width: 100%;
+          /* display: flex; */
+          
+        }
+        
+        /* .cont{
+        } */
+        .art:hover{
+            margin: 120px;
+            transform: scale(1.1);
+            background-color: white;
+        }
+        
+        .art{
+            transition: all .4s ease-in-out;
+            padding: 10px;
+            margin-top: 30px;
+            float:left;
+            width:65%;
+            color:black;
+            font-size: 30px;
+            font-weight: 900;
+            
+        }
+        
+        .floate{
+            /* background:url(https://source.unsplash.com/random);
+            opacity:60%; */
+            border-bottom-left-radius: 40%;
+            overflow: auto;
+            padding:15px;
+            margin-top: 40px;
+            float: right;
+            transition: all .4s ease-in-out;
+            height:450px;
+        width:30%;
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="headin">
+      <div class="items" id="item1">Home</div>
+      <div class="items" id="item2">Register</div>
+      <div class="items" id="item3">Sign-in</div>
+      <div class="items" id="item4">Help</div>
+      <!-- <div class="items" id="item5"></div> -->
+    </div>
+
+    <div class="bod">
+      <div class="cont">
+        <div class="art">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia reprehenderit et sunt, dolore necessitatibus dolores possimus reiciendis eius facere distinctio eum minima rem iste sed, placeat consequatur blanditiis pariatur aliquid similique animi eaque? Saepe veniam recusandae suscipit quis alias veritatis laboriosam. Dignissimos dolor velit odio facere ea corporis voluptate nobis eligendi quisquam unde maxime sapiente a ullam, iusto soluta possimus neque fugit. Commodi, veniam veritatis dolor cupiditate quaerat neque. Possimus quod repudiandae unde eaque modi ducimus culpa? Harum, tempora provident obcaecati voluptatum aut incidunt quo praesentium odio labore laudantium ipsum dolores tempore id quasi excepturi, suscipit corporis accusamus nobis sapiente repellat enim, nesciunt hic! Omnis, optio dignissimos dolore quisquam officiis explicabo id rerum impedit fuga at corrupti architecto similique, dolorem autem aliquam neque et in alias? Ipsum voluptates maxime voluptas. Ducimus nobis est dolore quaerat, possimus repellat harum neque at omnis doloribus deleniti numquam mollitia. Omnis praesentium provident ratione fuga repellendus quas laborum recusandae aut vero labore? Enim illo quod iusto incidunt sapiente reiciendis molestiae rerum animi doloribus sint! Error ducimus sit dicta corporis perferendis omnis ullam quae libero? Libero nobis culpa debitis, recusandae delectus aliquid. Adipisci, libero fuga. Officia dolorem facere dicta et sunt facilis cum quae architecto quas sit debitis reprehenderit amet laboriosam, sed laborum, nihil aspernatur iure eaque minus iste. Sunt placeat tempora ea quasi quia earum. Nesciunt reprehenderit odio beatae sunt voluptate! Distinctio deserunt nulla dolor sapiente earum reiciendis suscipit, pariatur vero, nam iusto animi, laboriosam temporibus? Molestias, sapiente voluptatibus rerum aut nihil unde quisquam veritatis dignissimos, quia, saepe ullam. Velit incidunt maxime ipsam officiis at nostrum quos, esse minus, fugiat, sunt quibusdam id veniam quisquam eum sapiente cumque inventore dicta recusandae doloremque iusto accusamus fuga omnis eos non. Velit cumque distinctio dolor, et, sit voluptatem porro, repudiandae asperiores maxime beatae fugit enim tempore aspernatur!</p>
+
+        </div>
+        <div class="floate">
+          <p>
+            Lorem ipsum dolor sit amet consectetur
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt autem, consequuntur reprehenderit culpa voluptatibus dolorem consequatur maxime excepturi recusandae facere nemo atque vero quisquam voluptatem ex veritatis repudiandae harum cum vitae ipsa quod facilis delectus. Obcaecati, magni velit dolore rem ratione fuga sit debitis laboriosam porro facere reiciendis dignissimos soluta consequatur magnam, laudantium ad eligendi placeat quod maiores quisquam perspiciatis eveniet. Autem aut ea reprehenderit repudiandae excepturi, aliquam recusandae, deleniti facilis dicta soluta dolores fugiat quis quas itaque id tempora maxime odit earum. Recusandae debitis odit quam. adipisicing elit. Dolorum
+            corporis nemo animi nisi obcaecati voluptas ea nam saepe cumque,
+            beatae eius suscipit itaque esse, doloribus possimus aspernatur
+            dolores deserunt. Necessitatibus recusandae nihil incidunt. Nostrum
+            consequatur blanditiis ullam accusamus magni natus commodi eaque
+            mollitia optio, dolorum architecto nobis debitis perspiciatis qui?
+            Dolorum quis, sit totam vero assumenda veniam optio libero dicta
+            iste quasi cum, modi corporis enim officiis! Corporis explicabo at
+            vitae minus rem eligendi officiis temporibus consectetur
+            repellendus, ipsum eveniet ratione iste dolore exercitationem
+            voluptas aut, dolorum aliquam nisi debitis illum recusandae saepe.
+            Labore aliquam, expedita quas porro nam aspernatur!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

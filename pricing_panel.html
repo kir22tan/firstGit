@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP</title>
+    <style>
+
+body{
+    background-color: rgb(115, 192, 243);
+    margin: 0;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pp{
+    /* margin-top: 20vh; */
+    background-color: rgb(255, 255, 255);
+    border:1px solid black;
+    height:63vh;
+    width:200px;
+    
+}
+
+/* img::after{
+content: "Standard";
+font-size: 200px;
+color:wheat;
+} */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+
+.aftext{
+    text-align: center;
+    color: gray;
+    font-size: larger;
+    font-weight: 1000;
+    /* padding-bottom: 5%; */
+    /* border-bottom: 1px solid gray; */
+
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    height: 12vh;
+}
+li{
+    /* list-style: none; */
+    padding: 3%;
+    /* padding-top: 1%; */
+    margin-top: 3%;
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+    border-top: 1px solid gray;
+    /* border-left: none; */
+    color: rgb(95, 173, 225);
+    font-weight: 900;
+    
+}
+
+.price{
+    text-align: center;
+    color: rgb(26, 85, 248);
+    font-weight: 900;
+    font-size: larger;
+    padding: 6%;
+    border-top: 1px solid gray;
+    /* position: absolute;
+    top:65%; */
+    margin-bottom: 5%;
+
+}
+
+a{
+text-decoration: none;
+text-align: center;
+border: 2px solid rgb(72, 173, 251);
+padding: 5%;
+border-radius: 45%;
+margin-left: 30%;
+
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="pp" id="tab1">
+            <img src="pic.avif" height=40% width=100%>
+            <div class="aftext">
+                Personal
+            </div>
+
+            <ul>
+                <li>Custom Doms</li>
+                <li>Sleeps after 30mins of inactivity</li>
+            </ul>
+            
+            <div class="price">FREE</div>
+
+            <a href="">Register</a>
+            
+        </div>
+        
+        <div class="pp" id="tab2">
+            <img src="pic1.avif" height=40% width=100%>
+            <div class="aftext">
+                Small Team
+            </div>
+            <ul>
+                <li>Never Sleeps</li>
+                <li>Multiple Workers</li>
+            </ul>
+            
+            
+            <div class="price">$150</div>
+            <a href="">Register</a>
+        </div>
+        <div class="pp" id="tab3">
+            <img src="pic2.avif" height=40% width=100%>
+            <div class="aftext">
+                Enterprise
+            </div>
+            <ul>
+                <li>Dedicated</li>
+                <li>Scalability</li>
+            </ul>
+            
+            
+            <div class="price">$400</div>
+            <a href="">Register</a>
+        </div>
+    </main>
+</body>
+</html>

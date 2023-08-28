@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexing</title>
+    <style>
+
+.container{
+    /* width:400px; */
+    height :400px; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-flow: wrap row; */
+    justify-content: center;
+    /* align-items: stretch; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-content: space-around; */
+    /* justify-content: */
+    gap:5px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+.box{
+    /* width: 50px; */
+    flex: 0 1 200px;
+    /* grow shrink and basis */
+    /* margin: 10px;  */
+    border: 3px solid rgb(12, 91, 87);
+    color: white;
+    background-color: rgb(231, 78, 78);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">boxed-1</div>
+        <div class="box">boxed-2</div>
+        <div class="box" style="align-self:stretch; flex-shrink: 40;flex-grow: 5;">boxed-3</div>
+        <div class="box">boxed-4</div>
+        <div class="box">boxed-5</div>
+        <div class="box">boxed-6</div>
+        <div class="box">boxed-7</div>
+        <div class="box">boxed-8</div>
+    </div>
+</body>
+</html>

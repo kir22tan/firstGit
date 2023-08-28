@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        .top{
+
+            width:100%;
+            height: 100px;
+            background-color: rgb(39, 99, 201);
+            position:absolute;
+            top:0;
+            left:0;
+            border-bottom: 2px solid white;
+        }
+
+        .header{
+
+            width:100%;
+            height: 230px;
+            background-color: rgb(39, 179, 201);
+            position:absolute;
+            top:100px;
+            left:0;
+            border-top: 2px solid white;
+        }
+        
+        .rest{
+
+            width:100%;
+            height: 270px;
+            overflow: auto;
+            background-color: rgb(255, 255, 255);
+            position:absolute;
+            top:330px;
+            left:0;
+            border-top: 2px solid white;
+        }
+
+        .top span{
+            position: relative;
+            color: white;
+            font-size: 40px;
+            line-height: 90px;
+            text-align: center;
+            left:530px
+        }
+
+        .header img{
+            height:150px;
+            width:150px;
+            position: relative;
+            top:7%;
+            border: 3px solid rgb(254, 254, 254);
+            border-radius: 50%;
+        }
+        
+        #rank-1{
+            left: 12%;
+        }
+        #rank-2{
+            left: 17%;
+        }
+
+        #rank-3{
+            left: 22%;
+        }
+
+        #rank1{
+            left: -1%;
+        }
+        #rank2{
+            left: 4%;
+        }
+        
+        
+        #rank3{
+            left: 10%;
+        }
+        
+.ranktext{
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(199, 230, 234);
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    display: inline;
+    position: relative;
+    top:25%;
+}
+
+.rankedbelow{
+    height:35%;
+    margin:5px;
+    border:3px solid black ;
+    border-radius: 30px;
+    background-color: rgb(208, 220, 220);
+}
+
+.rankedbelow img{
+    border-radius: 50%;
+    height:80px;
+    width:auto;
+    position: relative;
+    left:100px;
+    top:8px;
+}
+
+.rankedbelow span{
+    color: black;
+    font-size: 30px;
+    position: relative;
+    left: 20%;
+    bottom: 23%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <span>Leaderboard</span>
+    </div>
+    
+    <div class="header">
+        <img src="img1.png" alt="rank1" id="rank-1"></img>
+        <div class="ranktext" id="rank1">
+            1. Lorem, ipsum.
+        </div>
+
+        <img src="img1.png" alt="rank2" id="rank-2"></img>
+        <div class="ranktext" id="rank2">
+            2. Lorem, ipsum.
+        </div>
+        
+        <img src="img1.png" alt="rank3" id="rank-3"></img>
+        <div class="ranktext" id="rank3">
+            3. Lorem, ipsum.
+        </div>
+    </div>
+    
+    <div class="rest">
+<div class="rankedbelow" id="no1">
+    <img src="img1.png" alt="" class="commimg">
+    <span>4. Lorem, ipsum.</span>
+</div>
+<div class="rankedbelow" id="no2">
+<img src="img1.png" alt="" class="commimg">
+<span>5. Lorem, ipsum.</span>
+</div>
+
+<div class="rankedbelow" id="no3">
+    <img src="img1.png" alt="" class="commimg">
+    <span>6. Lorem, ipsum.</span>
+    
+</div>
+
+<div class="rankedbelow" id="no4">
+    <img src="img1.png" alt="" class="commimg">
+    <span>7. Lorem, ipsum.</span>
+    
+</div>
+<div class="rankedbelow" id="no5">
+    <img src="img1.png" alt="" class="commimg">
+    <span>8. Lorem, ipsum.</span>
+    
+</div>
+<div class="rankedbelow" id="no6">
+    
+    <img src="img1.png" alt="" class="commimg">
+    <span>9. Lorem, ipsum.</span>
+</div>
+<div class="rankedbelow" id="no7">
+<img src="img1.png" alt="" class="commimg">
+<span>10. Lorem, ipsum.</span>
+
+</div>
+    </div>
+
+</body>
+</html>

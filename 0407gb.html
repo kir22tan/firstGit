@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gb</title>
+    <style>
+        .cont {
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-rows: repeat(5, 100px);
+            grid-template-columns: repeat(5, 100px);
+            border: 2px solid red;
+            grid-template-areas: 
+                'head hud hi ji ok'
+                'head hud2 hi2 ji2 ok2'
+                'head3 hesad hi3 ji3 ok3'
+                'head4 hud4 hi4 ji4 ok4'
+                'head5 hud5 hi5 ji5 ok5';
+        }
+        
+        .items {
+            border: 2px solid white;
+            background-color: black;
+        }
+        
+        #i1 {
+            background-color: blue;
+            grid-area: 1/2/4/5;
+            grid-area: head;
+            z-index: 1;
+        border:none;
+    /* border-radius: 50%; */
+}
+        
+        #i2 {
+            background-color: rgb(36, 182, 143);
+            grid-area: 1/1/4/4;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="items" id="i1"></div>
+        <div class="items" id="i2"></div>
+        <div class="items" id="i3"></div>
+        <div class="items" id="i4"></div>
+        <div class="items" id="i5"></div>
+    </div>
+</body>
+</html>

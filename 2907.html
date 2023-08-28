@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+body{
+    background-color: #40798C ;
+}
+
+.cls1{
+    background-color: #FFA8A9;
+}
+
+.cls2{
+    background-color: #DBDFAC;
+}
+
+.cls3{
+    background-color:#B4E1FF;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+<br>
+<form>
+
+    <div class="cls1">
+        <label for = "id1">First Name</label>
+        <input type="text" id="id1" name="fn">
+        
+        <label for = "id2">Last Name</label>
+        <input id="id2" name="sn"type="text">
+        
+</div>
+
+<div class="cls2" >
+    <span>Select a Race:</span><br>
+
+    <input type="radio" value="fr5k" id="id3">
+    <Label for="id3">Fun run 5k<Label>
+        <br>
+        
+        <input type="radio" value="hm" id="id4">
+        <Label for="id4">Half Marathon<Label>
+            <br>
+            
+            
+            <input type="radio" value="fm" id="id5">
+            <Label for="id5">Full Marathon<Label>
+                <br>
+
+</div>
+<div class="cls3" >
+
+    <label for="ema">Email</label>
+    <input type="email" name="email" id="ema">
+    
+    <label for="pw">Password</label>
+    <input type="password" name="pwd" id="pw">
+
+
+</div>
+
+<div>
+    <label for="age">Select Age Group</label>
+<select name="age" id="age">
+    <option value="u18">Under 18</option>
+    <option value="a18">Above 18</option>
+    
+</select>
+
+</div>
+
+<button type="submit">Register!</button> 
+</form>
+
+</body>
+</html>

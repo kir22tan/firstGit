@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="0207.cc">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLex</title><style>
+        
+        *{  
+            box-sizing: border-box;
+            /* position: absolute; */
+            /* z-index: -1; */
+        }
+        
+        .container, .boxes, .items {
+            /* z-index: 1; */
+        }
+
+        body{
+
+            background: url('https://source.unsplash.com/random/?nature');
+            opacity: 60%;
+        }
+        
+        .container{
+    /* opacity: 0.8; */
+    display:flex;
+    align-items: center;
+    /* align-content: start; */
+    justify-content: end;
+    flex-flow: row wrap;
+    gap:15px;
+
+    margin:0px;
+    position: absolute;
+    /* z-index: 1; */
+    top:0px;left:0px;
+    height:96px;
+    width:100%;
+    background-color: rgb(195, 255, 235)
+    /* background-color-opacity; */
+
+}
+
+.boxes:hover{
+    border-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    /* animation: rotatei 1s 0s; */
+    animation: scalu 1s 0s;
+}
+
+.boxes{
+    /* width: 3em; */
+
+    padding: 7px;
+    text-align: center;
+    flex-basis: 96px;
+    /* align-self: flex-end; */
+    border:3px solid white;
+    font-size: 25px;
+    /* font-size: .3rem; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-variant: small-caps;
+transition: all 0.3s ease 0s;
+    /* font-style:oblique; */
+}
+
+article{
+
+    margin-top: 120px;
+    background-color: rgb(183, 227, 255);
+    width:400px;
+    height:400px;
+}
+.container2{
+    display: flex;
+    flex-flow: row wrap;
+    gap:25px;
+    justify-content: space-evenly;
+    align-content:space-evenly ;
+}
+
+@keyframes rotatei {
+    from{
+        /* transform: rotate('0');
+        transform: scaleX(5); */
+        /* transform: skewX(5); */
+        /* transform: scale3d(1,1,1); */
+    }
+    
+    to{
+        /* transform: scale3d(3,3,3); */
+     transform: rotate(540deg);
+        /* transform: scaleX(1); */
+        /* transform: skewX(); */
+    }
+    
+}
+
+@keyframes scalu{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.5);
+    }
+}
+
+.items{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 12.5px;
+    width:100px;
+    height: 100px;
+    border: 1px solid white;
+    
+    /* animation: rotatei  3s 0.3s 2 ;
+    animation: scalu  3s 0.3s 5 ; */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+<div class="boxes" id="box1">Home</div>
+<div class="boxes" id="box2">Modes</div>
+<div class="boxes" id="box3">About</div>
+<div class="boxes" id="box4">Signup/Login</div>
+<div class="boxes" id="box5">Help</div>
+        </div>
+    </header>
+
+<article >
+ 
+
+        <div class="container2">
+            <div class="items" id="item1">A</div>
+            <div class="items" id="item2">b</div>
+            <div class="items" id="item3">c</div>
+            <div class="items" id="item4">d</div>
+            <div class="items" id="item5">Z</div>
+            <div class="items" id="item6">Z</div>
+            <div class="items" id="item7">Z</div>
+            <div class="items" id="item8">Z</div>
+            <div class="items" id="item9">Z</div>
+        </div>
+
+  
+
+</article>
+</body>
+</html>
