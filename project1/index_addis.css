@@ -1,0 +1,11 @@
+.addis{
+    padding-left: 2vw;;
+    color:white;
+    height:7vh;
+    background-color: rgb(34,46,62);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+
+}
