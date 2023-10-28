@@ -1,3 +1,49 @@
+// let balb = document.querySelector('#balb');
+
+
+// balb.addEventListener('click', function() {
+//     balb.style.backgroundColor = 'red';
+// });
+
+// lowG = () => {
+//     console.log(69);
+// }
+
+// function topG() {
+//     setTimeout(() => {
+//         console.log(1);
+//         setTimeout(() => {
+//             console.log(2);
+
+//             setTimeout(() => {
+//                 console.log(3);
+//                 // lowG();
+//             }, 2000);
+
+//             console.log(4);
+//         }, 1000);
+//         console.log(5);
+//     }, 1000);
+
+//     console.log(6);
+// }
+
+
+// topG();
+
+// let y = 10;
+
+// let p1 = new Promise(
+//     function(resolve, reject) {
+//         if (y > 5) resolve(`bro my data is = ${y}`);
+//         else reject('srry , data');
+//     }
+// )
+// p1.then((val) => {
+//     console.log("here ya gaa! ,", val);
+//     return new Pro
+// }, (err) => { console.log('surrrrryyyyy ', err) });
+
 let btn = document.querySelector('button');
 btn.addEventListener('click', function() {
         for (let i = 1; i < 6; i++) {
