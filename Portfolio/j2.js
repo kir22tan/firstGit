@@ -20,9 +20,7 @@ p2.addEventListener('mousemove',(m)=>{
     
 })
 p2.addEventListener('mouseleave',(m)=>{
-    // console.log(m.clientX , m.clientY , "yo")
-    // imgp2.style.display = 'block'
     imgp2.style.display = 'none'
-    
-    
 })
+
+
