@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    top:0 ;
+    z-index: 999;
+    width: 100%;
+    /* box-shadow: .5px .5px 5px rgb(0, 200, 255); */
+    box-shadow: .2px .2px 2px rgba(32, 156, 178, 0.497);
+    /* border:1px solid black; */
+    text-transform: uppercase;
+    height: 14dvh;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.linkss{
+    /* flex-basis: 1; */
+    flex-grow: 0.6;
+    /* background-color: pink; */
+}
+
+.linkss ul {list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-flow: row wrap;
+    gap: 5dvw;
+    margin-right: 5dvw;
+    font-size: 1.3em;
+}
+
+.intro img{
+    /* flex-grow: 0.4; */
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    height: 10dvh;
+    /* width: 5dvw; */
+    margin-left: 3dvw;
+    margin-top: 1dvh;
+    box-shadow: .5px .5px 5px rgb(87, 95, 96);
+    
+}
+
+.intro{
+    gap: 1.5dvw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 1.1em;
+    /* line-height: 30%; */
+}
+
+/* .intro p::after{
+    text-transform: none;
+    position: absolute;
+    top: 60%;
+    left: 10.5%;
+    margin-top: 2%;
+    font-size: .7em;
+    content: "Frontend Developer";
+} */
+
+.linkss ul li:hover{
+    transition: all .5s;
+    cursor: pointer;
+    color: rgb(32,156,178);
+}
+.intro p:hover{
+    transition: all .5s;
+    cursor: pointer;
+    color: rgb(32,156,178);
+}

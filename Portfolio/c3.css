@@ -1,0 +1,74 @@
+.socials{
+    font-size: 4dvw;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30dvh;
+    width: 6dvw;
+    top: 27.5%;
+    left: 0;
+    /* text-decoration: none; */
+}
+
+.socials a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.dot{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    /* font-size: 3em; */
+    color: rgb(168, 168, 167);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(32,156,178);
+    animation: mover 3s ease infinite reverse;
+}
+
+@keyframes mover {
+    0%{
+    top: 10%;
+    background-color: rgb(32,156,178);
+    }
+
+    25%{
+        top: 25%;
+         background-color: rgb(168, 168, 167);
+    }
+    50%{
+        top: 50%;
+        background-color: rgb(32,156,178);
+    }
+    75%{
+        top: 75%;
+         background-color: rgb(168, 168, 167);
+    }
+    100%{
+        /* top: 90%; */
+        bottom: 10%;
+        background-color: rgb(32,156,178);
+    }
+    
+}
+
+.anim{
+    /* background-color: rgb(0, 0, 0); */
+    /* border: .5px solid black; */
+    /* border-radius: 50%; */
+    width: 5dvw;
+    height: 35dvh;
+    z-index: 100;
+    position: absolute;
+    /* position: relative; */
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+}

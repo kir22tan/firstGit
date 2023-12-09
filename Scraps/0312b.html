@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project b</title>
+    <style>
+        button{
+            margin-right: 10dvw;
+            height: 5dvh;
+            width:10dvw;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="start">STart</button>
+    <button id="stop">STop</button>
+
+    <script>
+
+let setI; // Declaring setI in a broader scope
+
+    document.querySelector('#start').addEventListener('click', randomCols);
+    document.querySelector('#stop').addEventListener('click', stopCols);
+
+    function randomCols() {
+        setI = setInterval(() => {
+            let x = [];
+            for (let i = 0; i < 3; i++) {
+                x[i] = Math.floor((Math.random() * 255) + 1);
+            }
+            document.querySelector('body').style.backgroundColor = `rgb(${x[0]}, ${x[1]}, ${x[2]})`;
+        }, 1000);
+    }
+
+    function stopCols() {
+        clearInterval(setI);
+    }
+
+
+    </script>
+</body>
+</html>

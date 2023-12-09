@@ -1,0 +1,58 @@
+main{
+    /* overflow-x: scroll; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 14dvh;
+    height: 100dvh;
+    background-color: rgb(204, 204, 204);
+    background-image: url("bgd2.jpg");
+    background-size: cover;
+    /* opacity: .2; */
+    overflow: hidden;
+}
+
+main .hi{
+    /* box-sizing: border-box; */
+    position: relative;
+    top: 30%;
+    left: 20%;
+    z-index: 100;
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    
+}
+
+main .logue{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2dvh;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    z-index: 100;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.proj{
+    background-color: rgb(32,156,178);
+    font-family: 'Space Grotesk', sans-serif;
+    width: 20dvw;
+    text-align: center;
+    position: relative;
+    /* top: 30dvh; */
+    /* left: 30dvh; */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    margin-top: 7dvh;
+    line-height: 8dvh;
+    font-size: larger;
+    font-weight: 600;
+}

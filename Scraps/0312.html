@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects by cac</title>
+    <!-- <link rel="stylesheet" href="0312.css"> -->
+    <style>
+        div div{
+            height: 100px;
+            width: 100px;
+        }
+
+        .white{
+            background-color: violet;
+        }
+        .gray{
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id = 'main' style="display: flex; align-items: center; justify-content: center;">
+        <div style="border: 1px solid black; margin: 2px; background-color: white;" id="square1"></div>
+        <div style="border: 1px solid black; margin: 2px; background-color: gray;" id="square2"></div>
+        <div style="border: 1px solid black; margin: 2px; background-color: blue;" id="square3"></div>
+        <div style="border: 1px solid black; margin: 2px; background-color: yellow;" id="square4"></div>
+    </div>
+
+        <div style=" text-align: center; margin-top: 10px; font-size: larger; font-weight: bolder;">Click on one of the boxes to change bgdcolor</div>
+
+        <div class="time">
+
+        </div>
+
+    <script>
+
+
+        
+        Array.from(document.querySelector("#main").children).forEach(
+            (box)=>{
+                let bcol = box.style.backgroundColor
+                box.addEventListener('click',()=>{
+                    document.querySelector('body').style.backgroundColor= bcol
+                    // document.querySelector('body').classList.toggle(bcol) 
+            
+            })
+            // console.log(box.style.backgroundColor)
+            
+        }
+        )
+        
+        // document.addEventListener()
+        // setInterval(()=>{
+
+            // let dayet = new Date()
+        // document.querySelector('.time').appendChild(document.createElement('span').appendChild(document.createTextNode(dayet.toLocaleTimeString())))
+
+        // console.log(dayet.toLocaleTimeString())
+
+        // },1000)
+
+       
+        
+        </script>
+</body>
+</html>
